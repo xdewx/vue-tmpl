@@ -8,17 +8,18 @@
     "eslint.config.js",
     "auto-imports.d.ts",
     "components.d.ts",
-    "tsconfig.lib.json"
+    "tsconfig.lib.json",
+    "tsconfig.lib.ts"
   ],
   "exports": {
     ".": {
       "import": {
-        "types": "./lib/index.d.ts",
-        "default": "./lib/index.es.js"
+        "default": "./lib/index.es.js",
+        "types": "./lib/index.d.ts"
       },
       "require": {
-        "types": "./lib/index.d.ts",
-        "default": "./lib/index.cjs"
+        "default": "./lib/index.cjs",
+        "types": "./lib/index.d.ts"
       }
     },
     "./*": "./lib/*"
@@ -37,6 +38,7 @@
     "release": "release-it"
   },
   "dependencies": {
+    "@leoking/naive-ui": "file:",
     "@vueuse/core": "^13.9.0",
     "@vueuse/math": "^13.9.0",
     "lodash-es": "^4.17.21",
