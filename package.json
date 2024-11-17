@@ -5,6 +5,7 @@
   "type": "module",
   "files": [
     "lib",
+    ".eslintrc-auto-import.cjs",
     "eslint.config.js",
     "auto-imports.d.ts",
     "components.d.ts",
