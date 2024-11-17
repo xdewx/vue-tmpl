@@ -1,5 +1,5 @@
 {
-  "name": "@leoking/vue-tmpl",
+  "name": "@leoking/naive-ui",
   "private": false,
   "version": "0.0.1",
   "type": "module",
@@ -76,7 +76,9 @@
     "unplugin-vue-router": "^0.17.1",
     "vite": "^7.2.4",
     "vitest": "^4.0.13",
-    "vue-tsc": "^3.1.5"
+    "vue-tsc": "^3.1.5",
+    "naive-ui": "^2.43.2",
+    "vfonts": "^0.0.3"
   },
   "publishConfig": {
     "access": "public",
