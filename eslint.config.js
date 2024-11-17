@@ -6,7 +6,6 @@ import autoImport from './.eslintrc-auto-import.cjs';
 import unocss from '@unocss/eslint-config/flat'
 // import vueMacro from '@vue-macros/eslint-config'
 
-
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   unocss,
@@ -17,5 +16,5 @@ export default [
   ...tseslint.configs.recommended,
   ...pluginVue.configs["flat/essential"],
   { files: ["**/*.vue"], languageOptions: { parserOptions: { parser: tseslint.parser } } },
-  { ignores: ["dist", ".eslintrc-auto-import.cjs"] }
+  { ignores: ["dist", ".eslintrc-auto-import.cjs", "lib"] }
 ];

@@ -1,16 +1,25 @@
 {
-  "name": "vue-tmpl",
+  "name": "@leoking/vue-tmpl",
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "main": "index.ts",
   "exports": {
-    ".": "./index.ts",
-    "./components": "./src/components/index.ts"
+    ".": {
+      "import": {
+        "node": "./lib/index.es.js",
+        "types": "./lib/index.d.ts"
+      },
+      "require": {
+        "node": "./lib/index.cjs",
+        "types": "./lib/index.d.ts"
+      }
+    },
+    "./index.css": "./lib/index.css"
   },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
+    "build:lib": "vite build --config vite.config.lib.ts && vue-tsc -p tsconfig.lib.json",
     "preview": "vite preview",
     "lint": "eslint .",
     "test": "vitest"
