@@ -1,16 +1,23 @@
 {
   "name": "@leoking/vue-tmpl",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "type": "module",
+  "files": [
+    "lib",
+    "eslint.config.js",
+    "auto-imports.d.ts",
+    "components.d.ts",
+    "tsconfig.lib.json"
+  ],
   "exports": {
     ".": {
       "import": {
-        "node": "./lib/index.es.js",
+        "default": "./lib/index.es.js",
         "types": "./lib/index.d.ts"
       },
       "require": {
-        "node": "./lib/index.cjs",
+        "default": "./lib/index.cjs",
         "types": "./lib/index.d.ts"
       }
     },
