@@ -16,5 +16,6 @@ export default [
   ...tseslint.configs.recommended,
   ...pluginVue.configs["flat/essential"],
   { files: ["**/*.vue"], languageOptions: { parserOptions: { parser: tseslint.parser } } },
-  { ignores: ["dist", ".eslintrc-auto-import.cjs", "lib"] }
+  { ignores: ["dist", ".eslintrc-auto-import.cjs", "lib"] },
+  { rules: { "vue/multi-word-component-names": "warn" } },
 ];

@@ -28,5 +28,6 @@
     "src/**/*.vue",
     "auto-imports.d.ts",
     "components.d.ts",
+    "typed-router.d.ts"
   ]
 }

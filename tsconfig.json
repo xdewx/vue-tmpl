@@ -6,7 +6,8 @@
   ],
   "compilerOptions": {
     "types": [
-      "@intlify/unplugin-vue-i18n/messages"
+      "@intlify/unplugin-vue-i18n/messages",
+      "unplugin-vue-router/client"
     ]
   }
 }
