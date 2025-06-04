@@ -29,6 +29,8 @@
     "build:lib": "vite build --config vite.config.lib.ts && vue-tsc -p tsconfig.lib.json",
     "preview": "vite preview",
     "lint": "eslint .",
+    "prettier:format": "prettier --write .",
+    "prettier:check": "prettier --check .",
     "test": "vitest"
   },
   "dependencies": {
@@ -36,8 +38,11 @@
     "@vueuse/core": "^11.2.0",
     "@vueuse/head": "^2.0.0",
     "@vueuse/math": "^11.2.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
     "lint-staged": "^15.2.10",
     "pinia": "^2.2.6",
+    "prettier": "^3.5.3",
     "simple-git-hooks": "^2.11.1",
     "vue": "^3.5.12",
     "vue-i18n": "10",

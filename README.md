@@ -11,3 +11,4 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 5. [vitest](https://cn.vitest.dev/)
 6. [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks/tree/master)
 7. [vue-i18n](https://vue-i18n.intlify.dev/guide/essentials/started.html)
+8. [unplugin-vue-router](https://github.com/posva/unplugin-vue-router)

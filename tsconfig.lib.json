@@ -1,27 +1,15 @@
 {
-    "compilerOptions": {
-        "strict": true,
-        "module": "ESNext",
-        "target": "ESNext",
-        "moduleResolution": "bundler",
-        "lib": [
-            "DOM",
-            "DOM.Iterable",
-            "DOM.AsyncIterable"
-        ],
-        "declaration": true,
-        "emitDeclarationOnly": true,
-        "outDir": "./lib",
-        "skipLibCheck": true
-    },
-    "include": [
-        "src/**/*.vue",
-        "src/**/*.ts",
-        "./*.d.ts",
-    ],
-    "exclude": [
-        "node_modules",
-        "src/App.vue",
-        "src/main.ts"
-    ]
+  "compilerOptions": {
+    "strict": true,
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["DOM", "DOM.Iterable", "DOM.AsyncIterable"],
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./lib",
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.vue", "src/**/*.ts", "./*.d.ts"],
+  "exclude": ["node_modules", "src/App.vue", "src/main.ts"]
 }

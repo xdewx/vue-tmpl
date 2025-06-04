@@ -3,17 +3,17 @@
  * @Date: 2024-11-14 11:39:35
  * @LastEditTime: 2024-11-17 12:39:31
  * @LastEditors: leoking
- * @Description: 
+ * @Description:
  */
 /// <reference types="vitest" />
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import Icons from 'unplugin-icons/vite'
-import UnoCSS from 'unocss/vite'
-import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
-import path from 'path'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import AutoImport from "unplugin-auto-import/vite";
+import Components from "unplugin-vue-components/vite";
+import Icons from "unplugin-icons/vite";
+import UnoCSS from "unocss/vite";
+import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
+import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -24,20 +24,20 @@ export default defineConfig({
       },
       name: "@leoking/[name]",
       fileName(format, entryName) {
-        return `${entryName}.${format}${format.endsWith("js") ? "" : ".js"}`
+        return `${entryName}.${format}${format.endsWith("js") ? "" : ".js"}`;
       },
-      formats: ['cjs', 'es', 'umd']
+      formats: ["cjs", "es", "umd"],
     },
     cssCodeSplit: true,
     rollupOptions: {
-      external: ['vue'],
+      external: ["vue"],
       output: {
         dir: "./lib",
         globals: {
-          vue: "Vue"
+          vue: "Vue",
         },
-      }
-    }
+      },
+    },
   },
   test: {},
   plugins: [
@@ -50,7 +50,12 @@ export default defineConfig({
       },
       dts: true,
       imports: [
-        'vue', 'pinia', 'vue-router', '@vueuse/core', '@vueuse/head', '@vueuse/math'
+        "vue",
+        "pinia",
+        "vue-router",
+        "@vueuse/core",
+        "@vueuse/head",
+        "@vueuse/math",
       ],
       ignore: [],
     }),
@@ -62,7 +67,7 @@ export default defineConfig({
     }),
     UnoCSS(),
     VueI18nPlugin({
-      include: [path.resolve(__dirname, 'src/locales/**')]
-    })
+      include: [path.resolve(__dirname, "src/locales/**")],
+    }),
   ],
-})
+});
