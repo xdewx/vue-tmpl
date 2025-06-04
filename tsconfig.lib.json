@@ -4,11 +4,15 @@
     "module": "ESNext",
     "target": "ESNext",
     "moduleResolution": "bundler",
-    "lib": ["DOM", "DOM.Iterable", "DOM.AsyncIterable"],
+    "lib": ["DOM", "DOM.Iterable", "DOM.AsyncIterable", "ESNext"],
     "declaration": true,
     "emitDeclarationOnly": true,
     "outDir": "./lib",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": [
+      "@intlify/unplugin-vue-i18n/messages",
+      "unplugin-vue-router/client"
+    ]
   },
   "include": ["src/**/*.vue", "src/**/*.ts", "./*.d.ts"],
   "exclude": ["node_modules", "src/App.vue", "src/main.ts"]
