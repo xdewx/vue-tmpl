@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
@@ -11,7 +10,6 @@ import VueRouterPlugin from "unplugin-vue-router/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  test: {},
   plugins: [
     VueRouterPlugin({}),
     vue(),
