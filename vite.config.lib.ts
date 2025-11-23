@@ -14,6 +14,7 @@ import Icons from "unplugin-icons/vite";
 import UnoCSS from "unocss/vite";
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
 import path from "path";
+import VueRouterPlugin from "unplugin-vue-router/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -41,6 +42,7 @@ export default defineConfig({
   },
   test: {},
   plugins: [
+    VueRouterPlugin({}),
     vue(),
     AutoImport({
       eslintrc: {
@@ -70,4 +72,9 @@ export default defineConfig({
       include: [path.resolve(__dirname, "src/locales/**")],
     }),
   ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+  },
 });

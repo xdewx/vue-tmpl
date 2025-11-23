@@ -23,3 +23,7 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 1. `branch main` is the common branch
 2. `branch element-plus` = `branch main` + `element-plus ui framework`
 3. `branch naive` = `branch naive` + `naive ui framework`
+
+## tips
+
+1. `import { createApp } from "./shared";`

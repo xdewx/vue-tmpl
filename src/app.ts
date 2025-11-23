@@ -5,18 +5,8 @@
  * @LastEditors: leoking
  * @Description:
  */
-import { createApp } from "vue";
-import { createRouter, createWebHashHistory } from "vue-router";
-import { pinia, i18n } from "./setup";
-import { routes } from "vue-router/auto-routes";
+import { createApp } from "./shared";
 import App from "./App.vue";
-import "./app.css";
-const router = createRouter({
-  history: createWebHashHistory(),
-  routes: routes,
-});
+
 const app = createApp(App);
-app.use(router);
-app.use(pinia);
-app.use(i18n);
 app.mount("#app");

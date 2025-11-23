@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { toggleTheme } from "@/shared";
 
 defineProps<{ msg: string }>();
 
@@ -8,6 +9,8 @@ const count = ref(0);
 
 <template>
   <div class="text-center">
+    <button @click="toggleTheme()">切换主题</button>
+
     <div>
       <a href="https://vite.dev" target="_blank">
         <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -27,22 +30,6 @@ const count = ref(0);
         <code>components/HelloWorld.vue</code> to test HMR
       </p>
     </div>
-
-    <p>
-      Check out
-      <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-        >create-vue</a
-      >, the official Vue + Vite starter
-    </p>
-    <p>
-      Learn more about IDE Support for Vue in the
-      <a
-        href="https://vuejs.org/guide/scaling-up/tooling.html#ide-support"
-        target="_blank"
-        >Vue Docs Scaling up Guide</a
-      >.
-    </p>
-    <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
   </div>
 </template>
 
@@ -63,5 +50,46 @@ const count = ref(0);
 
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+@media (prefers-color-scheme: light) {
+  a:hover {
+    color: #747bff;
+  }
 }
 </style>

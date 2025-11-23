@@ -39,4 +39,9 @@ export default defineConfig({
       include: [path.resolve(__dirname, "src/locales/**")],
     }),
   ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+  },
 });

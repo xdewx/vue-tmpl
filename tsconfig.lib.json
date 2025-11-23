@@ -9,11 +9,24 @@
     "emitDeclarationOnly": true,
     "outDir": "./lib",
     "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
     "types": [
       "@intlify/unplugin-vue-i18n/messages",
       "unplugin-vue-router/client"
     ]
   },
-  "include": ["src/**/*.vue", "src/**/*.ts", "./*.d.ts"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "auto-imports.d.ts",
+    "components.d.ts",
+    "typed-router.d.ts"
+  ],
   "exclude": ["node_modules", "src/App.vue", "src/main.ts"]
 }

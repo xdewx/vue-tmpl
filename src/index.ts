@@ -6,5 +6,5 @@
  * @Description:
  */
 
-export * from "./setup";
+export * from "./shared";
 export * from "./components/index";

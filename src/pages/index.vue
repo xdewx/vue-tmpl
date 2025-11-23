@@ -7,12 +7,12 @@
 -->
 <script setup lang="ts">
 import { HelloWorld } from "../components/index";
-import { toggleTheme } from "../index";
 </script>
 
 <template>
-  <button @click="toggleTheme()">切换主题</button>
-  <HelloWorld msg="Vite + Vue + Bun + UnoCSS + Unplugin + I18n" />
+  <div class="text-center margin-x-auto pt-10">
+    <HelloWorld msg="Vite + Vue + Bun + UnoCSS + Unplugin + I18n" />
+  </div>
 </template>
 
 <style scoped></style>
