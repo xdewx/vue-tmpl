@@ -37,6 +37,7 @@
     "release": "release-it"
   },
   "dependencies": {
+    "@ipa-schema/api": "^0.0.6",
     "@vueuse/core": "^13.9.0",
     "@vueuse/math": "^13.9.0",
     "lodash-es": "^4.17.21",
@@ -54,8 +55,10 @@
     "@intlify/unplugin-vue-i18n": "^11.0.1",
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
+    "@crxjs/vite-plugin": "^2.2.1",
     "@eslint/js": "^9.39.1",
     "@types/bun": "latest",
+    "@types/chrome": "^0.1.31",
     "@unocss/eslint-config": "^66.5.9",
     "@vitejs/plugin-vue": "^6.0.2",
     "@vue-macros/eslint-config": "^3.1.1",
@@ -75,6 +78,7 @@
     "unplugin-vue-components": "^30.0.0",
     "unplugin-vue-router": "^0.17.1",
     "vite": "^7.2.4",
+    "vite-plugin-zip-pack": "^1.2.4",
     "vitest": "^4.0.13",
     "vue-tsc": "^3.1.5"
   },

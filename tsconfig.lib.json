@@ -4,19 +4,27 @@
     "module": "ESNext",
     "target": "ESNext",
     "moduleResolution": "bundler",
-    "lib": ["DOM", "DOM.Iterable", "DOM.AsyncIterable", "ESNext"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "DOM.AsyncIterable",
+      "ESNext"
+    ],
     "declaration": true,
     "emitDeclarationOnly": true,
     "outDir": "./lib",
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     },
     "types": [
       "@intlify/unplugin-vue-i18n/messages",
       "unplugin-vue-router/client",
-      "unplugin-icons/types/vue3"
+      "unplugin-icons/types/vue3",
+      "chrome"
     ]
   },
   "include": [
