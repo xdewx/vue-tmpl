@@ -8,5 +8,8 @@
 import { createApp } from "./shared";
 import App from "./App.vue";
 
+// 下面一行是为了让element-plus的暗黑主题生效
+import "element-plus/theme-chalk/dark/css-vars.css";
+
 const app = createApp(App);
 app.mount("#app");

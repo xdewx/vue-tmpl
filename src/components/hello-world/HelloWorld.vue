@@ -5,11 +5,16 @@ import { toggleTheme } from "@/shared";
 defineProps<{ msg: string }>();
 
 const count = ref(0);
+const date = ref();
 </script>
 
 <template>
   <div class="text-center">
     <button @click="toggleTheme()">切换主题</button>
+
+    <div>
+      <el-date-picker v-model="date" type="date" />
+    </div>
 
     <div>
       <a href="https://vite.dev" target="_blank">
