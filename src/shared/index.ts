@@ -64,4 +64,9 @@ export const createApp = (cmp: Component) => {
   return app;
 };
 
-export { pinia, i18n, toggleTheme, router };
+export const locale = ref<any>();
+export const toggleLocale = (locale: any) => {
+  locale.value = locale;
+};
+
+export { pinia, i18n, toggleTheme, router, isDark };

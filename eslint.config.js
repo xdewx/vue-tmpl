@@ -26,5 +26,10 @@ export default [
   },
   eslintPluginPrettierRecommended,
   { ignores: ["dist", ".eslintrc-auto-import.cjs", "lib"] },
-  { rules: { "vue/multi-word-component-names": "warn" } },
+  {
+    rules: {
+      "vue/multi-word-component-names": "warn",
+      "@typescript-eslint/no-explicit-any": "warn",
+    },
+  },
 ];
