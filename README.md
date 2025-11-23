@@ -17,3 +17,9 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 11. [vitest](https://cn.vitest.dev/)
 12. [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks/tree/master)
 13. [husky](https://typicode.github.io/husky)
+
+## branch
+
+1. `branch main` is the common branch
+2. `branch element-plus` = `branch main` + `element-plus ui framework`
+3. `branch naive` = `branch naive` + `naive ui framework`
