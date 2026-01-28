@@ -37,21 +37,21 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@intlify/unplugin-vue-i18n": "^11.0.1",
     "@vueuse/core": "^13.9.0",
-    "@vueuse/head": "^2.0.0",
     "@vueuse/math": "^13.9.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.4",
-    "lint-staged": "^16.2.7",
     "lodash-es": "^4.17.21",
     "pinia": "^3.0.4",
-    "prettier": "^3.6.2",
     "vue": "^3.5.24",
     "vue-i18n": "^11.2.1",
     "vue-router": "^4.6.3"
   },
   "devDependencies": {
+    "@vueuse/head": "^2.0.0",
+    "prettier": "^3.6.2",
+    "lint-staged": "^16.2.7",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "@intlify/unplugin-vue-i18n": "^11.0.1",
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@eslint/js": "^9.39.1",
@@ -85,7 +85,7 @@
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
-    "pre-push": "bun run format:check &&bun run lint",
+    "pre-push": "bun run format:check && bun run lint",
     "preserveUnused": true
   },
   "lint-staged": {
