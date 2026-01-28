@@ -1,7 +1,7 @@
 {
-  "name": "@leoking/vue-tmpl",
+  "name": "@ipa-community/vue-component-library",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "files": [
     "lib",
@@ -31,9 +31,10 @@
     "preview": "vite preview",
     "lint": "eslint src",
     "format": "prettier --write .",
-    "prettier:check": "prettier --check .",
+    "format:check": "prettier --check .",
     "test": "vitest",
-    "prepare": "husky"
+    "prepare": "husky",
+    "release": "release-it"
   },
   "dependencies": {
     "@intlify/unplugin-vue-i18n": "^11.0.1",
@@ -54,6 +55,7 @@
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@eslint/js": "^9.39.1",
+    "@release-it/conventional-changelog": "^10.0.4",
     "@types/bun": "latest",
     "@unocss/eslint-config": "^66.5.9",
     "@vitejs/plugin-vue": "^6.0.2",
@@ -63,6 +65,7 @@
     "eslint-plugin-vue": "^10.6.0",
     "globals": "^16.5.0",
     "husky": "^9.1.7",
+    "release-it": "^19.2.4",
     "sass-embedded": "^1.93.3",
     "simple-git-hooks": "^2.13.1",
     "typescript": "~5.8.3",
@@ -76,9 +79,13 @@
     "vitest": "^4.0.13",
     "vue-tsc": "^3.1.5"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
-    "pre-push": "bun run lint",
+    "pre-push": "bun run format:check &&bun run lint",
     "preserveUnused": true
   },
   "lint-staged": {
