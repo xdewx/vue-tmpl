@@ -28,6 +28,7 @@ coverage
 .eslintrc-auto-import.cjs
 auto-imports.d.ts
 components.d.ts
+typed-router.d.ts
 
 pnpm-lock.yaml
 package-lock.json

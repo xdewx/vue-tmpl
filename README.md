@@ -17,6 +17,7 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 11. [vitest](https://cn.vitest.dev/)
 12. [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks/tree/master)
 13. [husky](https://typicode.github.io/husky)
+14. [release-it](https://github.com/release-it/release-it)
 
 ## branch
 
@@ -26,4 +27,61 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 
 ## tips
 
-1. `import { createApp } from "./shared";`
+1. `import { createApp } from "@/shared";`
+
+## usage
+
+1. install dependencies
+
+```bash
+bun i
+```
+
+2. run dev server
+
+```bash
+bun run dev
+```
+
+3. build library
+
+```bash
+bun run build:lib
+```
+
+4. build the total project
+
+```bash
+bun run build
+```
+
+or
+
+```bash
+bun run build:hash
+```
+
+4. run test
+
+```bash
+bun run test
+```
+
+5. lint and format code
+
+```bash
+bun run lint
+bun run format
+```
+
+6. release library
+
+```bash
+bun run release
+```
+
+or test release
+
+```bash
+bun run release --dry-run
+```
