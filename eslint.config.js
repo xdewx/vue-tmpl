@@ -28,8 +28,14 @@ export default [
   { ignores: ["dist", ".eslintrc-auto-import.cjs", "lib"] },
   {
     rules: {
-      "vue/multi-word-component-names": "warn",
+      "vue/multi-word-component-names": "error",
       "@typescript-eslint/no-explicit-any": "warn",
+    },
+  },
+  {
+    files: ["src/pages/**/*.vue"],
+    rules: {
+      "vue/multi-word-component-names": "off",
     },
   },
 ];

@@ -5,7 +5,6 @@
  * @LastEditors: leoking
  * @Description:
  */
-/// <reference types="vitest" />
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
@@ -27,20 +26,22 @@ export default defineConfig({
       fileName(format, entryName) {
         return `${entryName}.${format}${format.endsWith("js") ? "" : ".js"}`;
       },
-      formats: ["cjs", "es", "umd"],
+      formats: ["cjs", "es"], // , "umd"
     },
-    cssCodeSplit: true,
+    // FIXME: 设置为true时，只导入组件不会自动关联对应样式，暂不清楚怎么解决
+    cssCodeSplit: false,
     rollupOptions: {
-      external: ["vue"],
+      external: ["vue", "pinia", "vue-router"],
       output: {
         dir: "./lib",
         globals: {
           vue: "Vue",
+          pinia: "Pinia",
+          "vue-router": "VueRouter",
         },
       },
     },
   },
-  test: {},
   plugins: [
     VueRouterPlugin({}),
     vue(),
