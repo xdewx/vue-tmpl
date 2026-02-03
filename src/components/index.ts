@@ -1,1 +1,1 @@
-export { default as HelloWorld } from "./HelloWorld.vue";
+export * from "./hello-world/index";

@@ -21,7 +21,7 @@
         "default": "./lib/index.cjs"
       }
     },
-    "./index.css": "./lib/index.css"
+    "./*": "./lib/*"
   },
   "scripts": {
     "dev": "vite",
