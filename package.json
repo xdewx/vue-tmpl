@@ -61,6 +61,7 @@
     "@storybook/addon-onboarding": "^10.3.5",
     "@storybook/addon-vitest": "^10.3.5",
     "@storybook/vue3-vite": "^10.3.5",
+    "@tauri-apps/cli": "^2.10.0",
     "@types/bun": "latest",
     "@unocss/eslint-config": "^66.5.9",
     "@vitejs/plugin-vue": "^6.0.4",
