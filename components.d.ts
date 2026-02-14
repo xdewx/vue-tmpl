@@ -11,8 +11,8 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    HelloWorld: typeof import('./src/components/hello-world/HelloWorld.vue')['default']
     ElDatePicker: typeof import('element-plus/es')['ElDatePicker']
+    HelloWorld: typeof import('./src/components/hello-world/HelloWorld.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
