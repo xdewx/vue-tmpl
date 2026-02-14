@@ -23,7 +23,7 @@ export default defineConfig({
       entry: {
         index: path.resolve(__dirname, "./src/index.ts"),
       },
-      name: "@leoking/[name]",
+      name: "@leoking/element-plus",
       fileName(format, entryName) {
         return `${entryName}.${format}${format.endsWith("js") ? "" : ".js"}`;
       },

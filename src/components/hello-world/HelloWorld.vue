@@ -10,7 +10,7 @@ const date = ref();
 
 <template>
   <div class="text-center">
-    <button @click="toggleTheme()">切换主题</button>
+    <el-button @click="toggleTheme()">切换主题</el-button>
 
     <div>
       <el-date-picker v-model="date" type="date" />

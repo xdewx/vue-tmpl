@@ -6,10 +6,18 @@
  * @Description:
  */
 import { createApp } from "./shared";
+import ElementPlus from "element-plus";
+import zhCn from "element-plus/es/locale/lang/zh-cn";
+import "dayjs/locale/zh-cn";
+import "element-plus/theme-chalk/dark/css-vars.css";
+
 import App from "./App.vue";
 
 // 下面一行是为了让element-plus的暗黑主题生效
 import "element-plus/theme-chalk/dark/css-vars.css";
 
 const app = createApp(App);
+app.use(ElementPlus, {
+  locale: zhCn,
+});
 app.mount("#app");
