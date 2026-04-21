@@ -35,7 +35,11 @@ export default [
     },
   },
   {
-    files: ["src/pages/**/*.vue", "src/stories/**/*.vue"],
+    files: [
+      "src/pages/**/*.vue",
+      "src/stories/**/*.vue",
+      "src/chrome/**/*.vue",
+    ],
     rules: {
       "vue/multi-word-component-names": "off",
     },

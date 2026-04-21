@@ -16,7 +16,8 @@
     "types": [
       "@intlify/unplugin-vue-i18n/messages",
       "unplugin-vue-router/client",
-      "unplugin-icons/types/vue3"
+      "unplugin-icons/types/vue3",
+      "chrome"
     ]
   },
   "include": [
