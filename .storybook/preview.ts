@@ -1,9 +1,12 @@
 import type { Preview } from "@storybook/vue3-vite";
 import { setup } from "@storybook/vue3-vite";
+import "@/shared/index";
+import { pinia, i18n } from "@/shared/index";
 
 //  When using global custom components (app.component), directives (app.directive), extensions (app.use), or other application methods
 setup((app) => {
   console.log(app);
+  app.use(pinia).use(i18n);
 });
 
 const preview: Preview = {
