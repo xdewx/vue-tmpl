@@ -27,3 +27,5 @@ release
 .env
 .env.*
 .marscode
+*storybook.log
+storybook-static
