@@ -10,6 +10,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html,
+body,
+#app,
+#__nuxt {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 html.light {
   --bg-color: white;
   color: rgba(32, 31, 31, 0.863);
@@ -17,15 +27,31 @@ html.light {
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
   min-height: 100vh;
 }
 
 #app {
-  width: 100vw;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
+  min-height: 100vh;
+}
+
+/* 基础全屏或禁止溢出的样式 */
+html,
+body {
+  overflow: hidden; /* 这里可能是为了移动端适配或全屏布局 */
+}
+
+/* 专门针对打印的修复 */
+@media print {
+  html,
+  body {
+    height: auto; /* 让高度根据内容自动撑开 */
+    overflow: visible; /* 必须显式改为 visible，允许内容溢出以支持分页 */
+  }
+
+  #app,
+  #__nuxt {
+    height: auto;
+    overflow: visible; /* 确保根容器也不会截断内容 */
+    position: static; /* 避免绝对定位导致的布局问题 */
+  }
 }
